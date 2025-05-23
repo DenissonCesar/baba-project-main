@@ -1,0 +1,26 @@
+body {
+    background-image: url("../../assets/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+section {
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    margin: auto;
+    padding: 100px;
+    width: 500px;
+}
+
+.container {
+    width: 200px; /* Defina a largura da div */
+    height: 100px; /* Defina a altura da div */
+    color: lightblue;
+    margin: 0 auto;
+}
+
