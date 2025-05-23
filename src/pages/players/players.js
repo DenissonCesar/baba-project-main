@@ -92,5 +92,5 @@ function finalizar() {
   alert("Cadastro finalizado. Não é possível adicionar novos jogadores.");
   console.log("Jogadores cadastrados:", jogadores); 
   localStorage.setItem("jogadores", JSON.stringify(jogadores))
-  window.location.href = '../times/times.html'; 
+  window.location.href = 'times.html'; 
 }
