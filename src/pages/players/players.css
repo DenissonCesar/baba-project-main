@@ -1,0 +1,107 @@
+/* Reset e base */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Plano de fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Card principal */
+section {
+    position: relative;
+    background-color: white;
+    width: 500px;
+    padding: 100px 20px 40px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Título fixo no topo da section */
+.title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Container dos inputs e botões */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    width: 500px;
+}
+
+/* Inputs e botões */
+input[type="text"],
+input[type="number"] {
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de jogadores */
+ul#lista_jogadores {
+    background-color: white;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    color: black;
+}
+
+ul#lista_jogadores li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+        padding: 60px 20px 40px 20px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: 80%;
+    }
+}

@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de Jogadores</title>
-</head>
+    <link rel="stylesheet" href="./src/pages/players/players.css" />
+  </head>
 
-<body>
-    <div>
-        <label for="nomeJogador">Nome: </label>
-        <input type="text" id="nomeJogador">
+  <body>
+    <div class="container">
+      <label for="nomeJogador">Nome: </label>
+      <input type="text" id="nomeJogador" />
 
+      <label for="estrelasJogador">Estrelas: </label>
+      <input type="number" min="1" max="5" id="estrelaJogador" />
 
-        <label for="estrelasJogador">Estrelas: </label>
-        <input type="number" min="1" max="5" id="estrelaJogador">
-
-
-        <ul id="lista_jogadores"></ul>
-
-        <button onclick="cadastrar()">Cadastrar</button>
-        <button onclick="finalizar()">Finalizar</button>
+      <ul id="lista_jogadores"></ul>
     </div>
-</body>
-<script src="/src/pages/players/players.js"> </script>
 
+    <button onclick="cadastrar()">Cadastrar</button>
+    <button onclick="finalizar()">Finalizar</button>
+  </body>
+  <script src="/src/pages/players/players.js"></script>
 </html>
