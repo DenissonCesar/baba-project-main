@@ -9,17 +9,25 @@
 
   <body>
     <div class="container">
-      <label for="nomeJogador">Nome: </label>
-      <input type="text" id="nomeJogador" />
+        <div class="campo">
+            <label for="nomeJogador">Nome: </label>
+            <input type="text" id="nomeJogador" />
+        </div>
 
-      <label for="estrelasJogador">Estrelas: </label>
-      <input type="number" min="1" max="5" id="estrelaJogador" />
+        <div class="campo">
+            <label for="estrelasJogador">Estrelas: </label>
+            <input type="number" min="1" max="5" id="estrelaJogador" />
+        </div>
 
       <ul id="lista_jogadores"></ul>
+    
+      <div class="botoes">
+        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="finalizar()">Finalizar</button>
+      </div>
     </div>
 
-    <button onclick="cadastrar()">Cadastrar</button>
-    <button onclick="finalizar()">Finalizar</button>
+    
   </body>
   <script src="/src/pages/players/players.js"></script>
 </html>

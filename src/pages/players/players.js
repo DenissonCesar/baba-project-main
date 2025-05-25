@@ -40,9 +40,11 @@ function cadastrar() {
 function adicionarJogadorNaLista(jogador, index) {
   const li = document.createElement('li');
   li.innerHTML = `
-    ${jogador.nome} - ${"⭐".repeat(jogador.estrelas)}
-    <button onclick="editarJogador(${index})">✏️</button>
-    <button onclick="excluirJogador(${index})">🗑️</button>
+    <span class="nome">${jogador.nome} - ${"⭐".repeat(jogador.estrelas)}</span>
+    <div class="acoes">
+      <button class="editar" onclick="editarJogador(${index})">✏️</button>
+      <button class="deletar" onclick="excluirJogador(${index})">🗑️</button>
+    </div>
   `;
   document.getElementById('lista_jogadores').appendChild(li);
 }
